@@ -25,21 +25,16 @@ body {
 }
 /* fin varios*/
 header {
-  background-image: url(../img/wave.png);
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: 1000px 100px;
-  background-color: #333399;
-  overflow: hidden;
-  animation: inf-olas 15s linear infinite;
+  background: linear-gradient(to bottom, #ffe7dd, #333399);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .h1-cabeza {
   text-transform: uppercase;
-  text-decoration-line: underline;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   text-align: center;
+  margin: 2rem 0;
 }
 
 .contenedor {
@@ -84,24 +79,35 @@ header {
 }
 
 .item-nav:hover {
-  color: #0098b3;
+  color: #00a8cc;
   transition-duration: 600ms;
   font-weight: 900;
 }
 
 /* TERMINA NAVEGACION*/
 .cabecera {
+  background-image: url(../img/wave.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 1000px 100px;
+  background-color: #142850;
+  overflow: hidden;
+  animation: inf-olas 15s linear infinite;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 3fr 1fr;
 }
 
+.nombre-mio path {
+  stroke-dashoffset: 50px;
+}
+
 .nombre-presentacion {
   grid-area: 2/1/3/2;
   font-weight: 900;
   align-self: center;
-  color: white;
+  color: #eeeeee;
 }
 
 .nombre-presentacion div {
@@ -117,6 +123,19 @@ header {
   margin: 1rem 0;
 }
 
+.header-conocimientos {
+  grid-area: 2/2/3/3;
+  color: #eeeeee;
+  align-self: center;
+}
+.header-conocimientos h1 {
+  font-size: 3em;
+}
+.header-conocimientos li {
+  margin-left: 1em;
+  font-size: 1.5em;
+}
+
 /*seccion sobre mi*/
 .sobre-mi {
   height: max-content;
@@ -126,9 +145,9 @@ header {
 }
 
 .img-workman {
-  width: 40%;
+  width: 35%;
   shape-outside: url(../img/working-man.png);
-  shape-margin: 1.5em;
+  shape-margin: 1.4em;
   float: left;
 }
 
