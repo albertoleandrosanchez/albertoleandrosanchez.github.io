@@ -35,10 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     ]
 
+    // ordena de forma aleatoria el array
     cardArray.sort(() => 0.5 - Math.random())
-    //crear el board
-
-    const grid = document.querySelector(".grid")
+    
+    // crear el board
+    const grid = document.querySelector(".adivinador")
     const resultDisplay = document.querySelector("#result")
     var cardsChosen = []
     var cardsChosenId = []
@@ -56,16 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
             
         }
     }
-    // function createBoard() {
-    //     for (let i = 0; i < cardArray.length; i++) {
-          
-    //       var card = document.createElement('img')
-    //       card.setAttribute('src', '../img/cuad-signo.png')
-    //       card.setAttribute('data-id', i)
-    //       card.addEventListener('click', flipCard)
-    //       grid.appendChild(card)
-    //     }
-    //   }
     //girar carta
     function flipCard(){
         var cardId = this.getAttribute("data-id")
@@ -73,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cardsChosenId.push(cardId)
         this.setAttribute("src", cardArray[cardId].img)
         if (cardsChosen.length === 2){
-            setTimeout(checkForMatch, 500)
+            setTimeout(checkForMatch,500)
         }
     }
     //buscar emparejamiento

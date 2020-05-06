@@ -74,8 +74,21 @@ header {
   text-decoration: none;
   color: #000142;
 }
-.item-nav img {
+.item-nav img  {
   height: 1.7rem;
+}
+
+
+.item-nav img:hover{
+    
+}
+
+.ico{
+  height: 1.7rem;
+  fill:black;
+}
+.ico:hover{
+  fill: red;
 }
 
 .item-nav:hover {
@@ -97,10 +110,6 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 3fr 1fr;
-}
-
-.nombre-mio path {
-  stroke-dashoffset: 50px;
 }
 
 .nombre-presentacion {
@@ -139,6 +148,7 @@ header {
 /*seccion sobre mi*/
 .sobre-mi {
   height: max-content;
+  margin: 0 8% ;
 }
 .sobre-mi p {
   font-size: 1.4em;
