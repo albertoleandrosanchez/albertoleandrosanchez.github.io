@@ -74,20 +74,14 @@ header {
   text-decoration: none;
   color: #000142;
 }
-.item-nav img  {
+.item-nav img {
   height: 1.7rem;
 }
-
-
-.item-nav img:hover{
-    
-}
-
-.ico{
+.ico {
   height: 1.7rem;
-  fill:black;
+  fill: black;
 }
-.ico:hover{
+.ico:hover {
   fill: red;
 }
 
@@ -98,6 +92,7 @@ header {
 }
 
 /* TERMINA NAVEGACION*/
+
 .cabecera {
   background-image: url(../img/wave.png);
   background-repeat: repeat-x;
@@ -109,7 +104,20 @@ header {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.cabecera-BC{
+  background-color: #142850;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cabecera-cur{
+  background-color: white;
+  height: max-content;
+  display: flex;
+  
 }
 
 .nombre-presentacion {
@@ -118,16 +126,13 @@ header {
   align-self: center;
   color: #eeeeee;
 }
-
 .nombre-presentacion div {
   text-align: center;
   width: fit-content;
 }
-
 .nombre-presentacion h1 {
   font-size: 4rem;
 }
-
 .nombre-presentacion img {
   margin: 1rem 0;
 }
@@ -135,7 +140,6 @@ header {
 .header-conocimientos {
   grid-area: 2/2/3/3;
   color: #eeeeee;
-  align-self: center;
 }
 .header-conocimientos h1 {
   font-size: 3em;
@@ -145,10 +149,26 @@ header {
   font-size: 1.5em;
 }
 
+.imagen-centro{
+  width: 50%;
+  height: 50%;
+}
+
+.boton-Descarga{
+  color: black;
+  font-size: 2rem;
+  padding: rem 1rem;
+  border-radius: 3px;
+  text-decoration: none;
+  
+}
+
 /*seccion sobre mi*/
 .sobre-mi {
+  display: inline-block;
   height: max-content;
-  margin: 0 8% ;
+  margin: 0 6%;
+
 }
 .sobre-mi p {
   font-size: 1.4em;
@@ -160,5 +180,7 @@ header {
   shape-margin: 1.4em;
   float: left;
 }
+
+/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
