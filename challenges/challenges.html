@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="principal" class="container">
+        <div id="Challenge1" class="my-5 w-auto" >
+            <h1>CHALLENGE 1</h1>
+            <h2 class="m-4">Tus años en dias</h2>
+            <div id="challenge1" class="d-flex flex-wrap">
+                <input class="col-md-6 mb-3" type="number" id="edad" name="trip-start" value="2018-07-22" min=current max="2018-12-31">
+                <div class="col-md-4 flex justify-content-center">
+                    <button id="clickBtn" class="btn btn-primary col-5">Click me</button>
+                    <button id="resetBtn" class=" btn btn-danger col-5">Reset</button>
+                </div>
+            </div>
+            <div class="container">
+                <div id="age-result"></div>
+            </div>
+        </div>
+        <div class="my-5">
+            <h1>CHALLENGE 2</h1>
+            <button id ="btnGeneradorImagenes"class="btn btn-warning">GENERAR</button>
+            <div id="divGeneradorImagenes" class="container-fluid">
+            </div>
+        <div class='challenge3'>
+            <h1>CHALLENGE 3</h1>
+        
+            <div id = 'imagesPPT' class='d-flex justify-content-around'>
+                <img class="img-fluid imgPPT " src="img/piedra.jpg" name="piedra">
+                <img class="img-fluid imgPPT" src="img/papel.jpg" name="papel">
+                <img class="img-fluid imgPPT" src="img/tijera.jpg"  name="tijera">
+            </div>
+            <div id=contenedorResultadoPPT>
+                <p id='resultadoPPT'></p>
+            </div>
+            <button class="btn btn-dark" onclick="resetPPT()">RESET</button>
+        </div>
+        <div class="Challenge5">
+            <div class="head-challenge5 ">
+                <h1> challenge 5: blackJack</h1>
+                <h4>Presiona HIT para empezar a jugar <br>
+                    STAY para quedarte con esa mano <br>
+                    RESET para pasar pasar a la siguiente ronda</h4>
+            </div>
+            <div class='c5-panel d-flex flex-column vh-100 col bg-success '>
+                <div class="display row w-100 h-75">
+                    
+                    <div id='player-display' class='player-display col-sm-6 border '>
+                        <h3>Jugador: <span id='player-puntaje' class='puntaje-ronda'>0</span></h3>
+                        <div class='contenedor-cartas d-flex'></div>
+                    </div>
+
+                    <div id='bot-display' class='bot-display col-sm-6 border'>
+                        <h3>Bot: <span id='bot-puntaje' class='puntaje-ronda'>0</span></h3>
+                        <div class='contenedor-cartas d-flex'></div>
+                    </div>
+                </div>
+                <div class='footer d-flex flex-column align-items-center'>
+                    <div class="botones row justify-content-center">
+                        <button id='hitBTN' class="btn btn-primary m-1">HIT</button>
+                        <button id='stayBTN' class="btn btn-warning m-1">STAY</button>
+                        <button id='PResetBTN' class="btn btn-danger m-1">RESET</button>
+                    </div>
+                    <div class='output'>
+                        <table class="table w-25 ">
+                            <tr>
+                                <th>player</th>
+                                <th>empatados</th>
+                                <th>perdidos</th>
+                            </tr>
+                            <tr>
+                                <td id='pGanadas'>0</td>
+                                <td id='pEmpatadas'>0</td>
+                                <td id='pPerdidas'>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
