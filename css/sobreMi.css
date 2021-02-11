@@ -1,0 +1,50 @@
+:root {
+  --main-color: #142850;
+}
+
+.sobre-mi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: max-content;
+  margin: 0 6%;
+  color: rgb(20, 40, 80);
+}
+.sobre-mi p {
+  font-size: 1.3em;
+}
+.sobre-mi p:first-of-type {
+  margin-top: 1em;
+}
+
+.sobre-mi-face {
+  height: 20em;
+  width: auto;
+  padding: 0 2em;
+}
+
+.h1-cabeza {
+  display: inline-block;
+  text-transform: uppercase;
+
+  font-weight: 800;
+  color: var(--main-color);
+  padding: 1rem 1em;
+  border: solid 2px;
+}
+
+.contenedor {
+  margin: 0 5%;
+}
+
+@media (max-width: 1000px) {
+  .sobre-mi {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sobre-mi-face {
+    margin-bottom: 2em;
+  }
+} ;
