@@ -1,0 +1,31 @@
+.curriculum {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.curriculum-show {
+  height: 100vh;
+}
+
+.boton-DescargaCV {
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 0;
+}
+
+.boton-DescargaCV:hover {
+  color: red;
+  background-color: #020323;
+  fill: red;
+}
+
+.ico-descarga {
+  color: inherit;
+  fill: inherit;
+}
+
+@media (max-width: 1000px) {
+  .curriculum {
+  }
+} ;

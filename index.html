@@ -9,24 +9,26 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/sobreMi.css">
   <link rel="stylesheet" href="css/trabajos.css">
+  <link rel="stylesheet" href="css/curriculum.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Sen:400,700,800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
 </head>
 <body>
     <header class="header">
-        <nav class="header-nav">
+        <nav id="header-nav" class="header-nav">
           <div class="logo">
       
           </div>
           <ul class="lista-item">
               <a class="item-nav" href="#sobre-mi">Sobre mi</a>                 
-              <a class="item-nav" href="challenges/challenges.html">Trabajos</a>
+              <a class="item-nav" href="#trabajos">Trabajos</a>
               <!-- <a class="item-nav" href="public/underConstruction.html">trabajos</a> -->
-              <a class="item-nav" href="public/curriculum.html">Curriculum</a>         
+              <a class="item-nav" href="#curriculum">Curriculum</a>         
               <a class="item-nav" href="http://github.com/albertoleandrosanchez" target="_blank"><img src="img/icons/github.svg" alt=""></a>
               <a class="item-nav" href="http://linkedin.com/in/alberto-leandro-sanchez-2ab11714b" target="_blank"><img src="img/icons/linked-in.svg" alt=""></a>
-              <a class="item-nav" href="http://t.me/San_Beto" target="_blank"><img src="img/icons/telegram.svg" alt=""></a>
+              <a class="item-nav" href="https://api.whatsapp.com/send?phone=541169033092" target="_blank"><img src="./img/icons/whatsapp-ico.svg" alt=""></a>
           </ul>
         </nav>
         <div class="cabecera">
@@ -79,38 +81,63 @@
               <div class="trabajo-card-info-titulo">netflix-clone</div>
               <div class="trabajo-card-info-description"><p> Clon de netflix, consumiendo api una api de peliculas y otra de trailers</p></div>
               <div class="trabajo-card-info-btns">
-                <a class="trabajo-card-info-btn b-site" href="">Sitio</a>
-                <a class="trabajo-card-info-btn b-repo" href="">Repositorio</a>
+                <a class="trabajo-card-info-btn b-site" target="_blank" href="https://netflix-clone-als.netlify.app/">Sitio</a>
+                <a class="trabajo-card-info-btn b-repo" target="_blank" href="https://github.com/albertoleandrosanchez/netflix-clone">Repositorio</a>
                 
               </div>
             </div>
           </div>
 
-        <!--   <div class="trabajo-card">
-            <div class="trabajo-card-avatar"><img class="trabajo-card-avatar-img" src="./img/sites-avatar/blackjack-site.JPG" alt="blackjack"></div>
+          <div class="trabajo-card">
+            <div class="trabajo-card-avatar"><img class="trabajo-card-avatar-img" src="./img/sites-avatar/blackjack-site.JPG" alt="netflix-clone"></div>
             <div class="trabajo-card-info">
-              <div class="trabajo-card-info-titulo">Blackjack</div>
-              <div class="trabajo-card-info-description">Juego blackJack hecho con puro vanillaJs y bootstrap</div>
+              <div class="trabajo-card-info-titulo">BlackJack</div>
+              <div class="trabajo-card-info-description"><p> Un juego de blackJack hecho con vanilla javascript</p></div>
               <div class="trabajo-card-info-btns">
-                <a class="trabajo-card-info-btn b-repo" href="">Sitio</a>
-                <a class="trabajo-card-info-btn b-site" href="">Repositorio</a>
+                <a class="trabajo-card-info-btn b-site" target="_blank"  href="https://blackjack-als.netlify.app/">Sitio</a>
+                <a class="trabajo-card-info-btn b-repo" target="_blank" href="https://github.com/albertoleandrosanchez/BlackJack">Repositorio</a>
+                
               </div>
             </div>
           </div>
 
           <div class="trabajo-card">
-            <div class="trabajo-card-avatar"></div>
+            <div class="trabajo-card-avatar"><img class="trabajo-card-avatar-img" src="./img/sites-avatar/card-site.JPG" alt="netflix-clone"></div>
             <div class="trabajo-card-info">
-              <div class="trabajo-card-info-titulo"></div>
-              <div class="trabajo-card-info-description"></div>
+              <div class="trabajo-card-info-titulo">Card modelo</div>
+              <div class="trabajo-card-info-description"><p> Una demo de una carta de presentacion</p></div>
               <div class="trabajo-card-info-btns">
-                <a class="trabajo-card-info-btn b-repo" href="">Sitio</a>
-                <a class="trabajo-card-info-btn b-site" href="">Repositorio</a>
+                <a class="trabajo-card-info-btn b-site" target="_blank"  href="https://dreamy-mcclintock-9ee3b3.netlify.app/">Sitio</a>                
               </div>
             </div>
-          </div> -->
+          </div>
 
       </div>
+      <!-- Curriculum -->
+      <h1 class="h1-titulo" id="curriculum">Curriculum</h1>
+      <div class="curriculum">
+
+         
+            <a href="../img/CV-AlbertoLeandroSanchez.pdf" download="" class="btn boton-DescargaCV">
+                
+                <svg  enable-background="new 0 0 24 24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" class="icon ico-descarga"><path d="m12 16c-.205 0-.401-.084-.542-.232l-5.25-5.5c-.455-.476-.117-1.268.542-1.268h2.75v-5.75c0-.689.561-1.25 1.25-1.25h2.5c.689 0 1.25.561 1.25 1.25v5.75h2.75c.659 0 .997.792.542 1.268l-5.25 5.5c-.141.148-.337.232-.542.232z"/><path d="m22.25 22h-20.5c-.965 0-1.75-.785-1.75-1.75v-.5c0-.965.785-1.75 1.75-1.75h20.5c.965 0 1.75.785 1.75 1.75v.5c0 .965-.785 1.75-1.75 1.75z"/></svg>
+                Descargar CV
+            </a>
+              
+     
+          <embed src="../img/CV-AlbertoLeandroSanchez.pdf" type="application/pdf" class="curriculum-show">
+    
+      </div>
+      <footer class="footer">
+        <nav class="footer-nav">
+          <a class="footer-nav-i" href="#header-nav"><img class="footer-nav-ico" src="img/icons/flecha-hacia-arriba.svg" alt=""></a>
+          <a class="footer-nav-i" href="http://github.com/albertoleandrosanchez" target="_blank"><img src="img/icons/github.svg" class="footer-nav-ico" alt=""></a>
+          <a class="footer-nav-i" href="https://api.whatsapp.com/send?phone=541169033092"
+          target="_blank"><img class="footer-nav-ico" src="./img/icons/whatsapp-ico.svg" alt=""></a>
+
+        </nav>
+      </footer>
+
     </main>
     <script src="js/script.js"></script>
 </body>

@@ -11,6 +11,7 @@
 
   color: rgb(20, 40, 80);
   margin-bottom: 3em;
+  border: rgb(20, 40, 80) 3px solid;
 }
 .sobre-mi p {
   font-size: 1.3em;
@@ -30,6 +31,7 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    border: none;
   }
 
   .sobre-mi-face {

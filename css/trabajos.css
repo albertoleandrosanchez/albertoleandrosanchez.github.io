@@ -4,14 +4,15 @@
   color: #142850;
   height: max-content;
   margin-bottom: 2em;
+  border: rgb(20, 40, 80) 3px solid;
 }
 
 .trabajo-card-avatar {
   display: flex;
   justify-content: center;
-  width: fit-content;
+  width: 33em;
 
-  max-width: 50em;
+  height: 20em;
   border-radius: 5px;
   border: #0d1b36 solid 5px;
   overflow: hidden;
@@ -19,7 +20,7 @@
 }
 
 .trabajo-card-avatar-img {
-  width: 100%;
+  object-fit: fill;
 }
 
 .trabajo-card-info {
@@ -68,6 +69,10 @@
   .trabajo-card {
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 1em;
+  }
+  .trabajo-card-avatar {
+    margin-right: 0;
   }
   .trabajo-card-info {
     text-align: center;

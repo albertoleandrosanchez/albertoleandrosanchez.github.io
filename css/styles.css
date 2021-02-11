@@ -4,6 +4,9 @@
   padding: 0em;
   box-sizing: content-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .contenedor {
   margin: 0 10%;
 }
@@ -61,14 +64,21 @@ body {
   height: 50%;
 }
 
-.boton-Descarga {
-  color: black;
-  font-size: 2rem;
-  padding: rem 1rem;
-  border-radius: 3px;
+.btn {
+  font-weight: 600;
+  border: #142850 2px solid;
+  border-radius: 10px;
+  padding: 1em;
+  margin-right: 1em;
   text-decoration: none;
+  color: #142850;
+  transition: 250ms ease-in-out;
 }
 
+.icon {
+  width: 25px;
+  height: 25px;
+}
 @media (max-width: 1000px) {
   .contenedor {
     text-align: center;
