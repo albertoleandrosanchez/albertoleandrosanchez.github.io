@@ -9,6 +9,9 @@
 }
 
 .boton-DescargaCV {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
   text-align: center;
   margin-right: 0;
@@ -21,11 +24,8 @@
 }
 
 .ico-descarga {
+  height: 1.3em;
+  width: 1.3em;
   color: inherit;
   fill: inherit;
 }
-
-@media (max-width: 1000px) {
-  .curriculum {
-  }
-} ;
