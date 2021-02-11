@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/cabecera.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/sobreMi.css">
+  <link rel="stylesheet" href="css/trabajos.css">
   <link href="https://fonts.googleapis.com/css?family=Sen:400,700,800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -19,10 +20,10 @@
       
           </div>
           <ul class="lista-item">
-              <a class="item-nav" href="index.html">sobre mi</a>                 
-              <a class="item-nav" href="challenges/challenges.html">challenges</a>
+              <a class="item-nav" href="#sobre-mi">Sobre mi</a>                 
+              <a class="item-nav" href="challenges/challenges.html">Trabajos</a>
               <!-- <a class="item-nav" href="public/underConstruction.html">trabajos</a> -->
-              <a class="item-nav" href="public/curriculum.html">curriculum</a>         
+              <a class="item-nav" href="public/curriculum.html">Curriculum</a>         
               <a class="item-nav" href="http://github.com/albertoleandrosanchez" target="_blank"><img src="img/icons/github.svg" alt=""></a>
               <a class="item-nav" href="http://linkedin.com/in/alberto-leandro-sanchez-2ab11714b" target="_blank"><img src="img/icons/linked-in.svg" alt=""></a>
               <a class="item-nav" href="http://t.me/San_Beto" target="_blank"><img src="img/icons/telegram.svg" alt=""></a>
@@ -52,10 +53,11 @@
     </header>
 
     <main class="contenedor">
-      <div class="sobre-mi ">
+      <h1 class="h1-titulo">Sobre mi</h1>
+      <div class="sobre-mi " id="sobre-mi">
         <img src="img/Card__face.jpg" class="sobre-mi-face" alt="">
         <div class="sobre-mi-info">
-            <h1 class="h1-cabeza">Sobre mi</h1>
+            
           <p >
             Actualmente me encuentro trabajando de alumno asistente en mi universidad pero estoy buscando la primera oportinidad de unirme a un proyecto o empresa para empezar a obtener experiencia como desarrollador frontend o backend. 
           </p>
@@ -67,6 +69,46 @@
             </p>
         </div>
         
+      </div>
+      <div class="trabajos" id="trabajos">
+        <h1 class="h1-titulo">Trabajos</h1>
+
+          <div class="trabajo-card">
+            <div class="trabajo-card-avatar"><img class="trabajo-card-avatar-img" src="./img/sites-avatar/netflix-clone-site.JPG" alt="netflix-clone"></div>
+            <div class="trabajo-card-info">
+              <div class="trabajo-card-info-titulo">netflix-clone</div>
+              <div class="trabajo-card-info-description"><p> Clon de netflix, consumiendo api una api de peliculas y otra de trailers</p></div>
+              <div class="trabajo-card-info-btns">
+                <a class="trabajo-card-info-btn b-repo" href="">Sitio</a>
+                <a class="trabajo-card-info-btn b-site" href="">Repositorio</a>
+              </div>
+            </div>
+          </div>
+
+        <!--   <div class="trabajo-card">
+            <div class="trabajo-card-avatar"><img class="trabajo-card-avatar-img" src="./img/sites-avatar/blackjack-site.JPG" alt="blackjack"></div>
+            <div class="trabajo-card-info">
+              <div class="trabajo-card-info-titulo">Blackjack</div>
+              <div class="trabajo-card-info-description">Juego blackJack hecho con puro vanillaJs y bootstrap</div>
+              <div class="trabajo-card-info-btns">
+                <a class="trabajo-card-info-btn b-repo" href="">Sitio</a>
+                <a class="trabajo-card-info-btn b-site" href="">Repositorio</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trabajo-card">
+            <div class="trabajo-card-avatar"></div>
+            <div class="trabajo-card-info">
+              <div class="trabajo-card-info-titulo"></div>
+              <div class="trabajo-card-info-description"></div>
+              <div class="trabajo-card-info-btns">
+                <a class="trabajo-card-info-btn b-repo" href="">Sitio</a>
+                <a class="trabajo-card-info-btn b-site" href="">Repositorio</a>
+              </div>
+            </div>
+          </div> -->
+
       </div>
     </main>
     <script src="js/script.js"></script>

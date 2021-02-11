@@ -4,11 +4,22 @@
   padding: 0em;
   box-sizing: content-box;
 }
-
+.contenedor {
+  margin: 0 10%;
+}
 body {
   font-family: "Sen", sans-serif;
   background: white;
   min-width: 515px;
+}
+.h1-titulo {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--main-color);
+  padding: 1rem 1em;
+  border: solid 2px;
+  margin-bottom: 1em;
 }
 
 .body::-webkit-scrollbar-track {
@@ -56,4 +67,10 @@ body {
   padding: rem 1rem;
   border-radius: 3px;
   text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .contenedor {
+    text-align: center;
+  }
 }

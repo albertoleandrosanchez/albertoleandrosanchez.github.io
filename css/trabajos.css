@@ -1,0 +1,71 @@
+.trabajo-card {
+  display: flex;
+  flex-direction: row;
+  color: #142850;
+  height: max-content;
+}
+
+.trabajo-card-avatar {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+
+  max-width: 50em;
+  border-radius: 5px;
+  border: #0d1b36 solid 5px;
+  overflow: hidden;
+  margin-right: 1em;
+}
+
+.trabajo-card-avatar-img {
+  width: 100%;
+}
+
+.trabajo-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.trabajo-card-info-titulo {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.trabajo-card-info-description {
+  margin-bottom: 2em;
+}
+
+/*butons*/
+
+.trabajo-card-info-btns {
+  display: flex;
+  justify-content: flex-start;
+}
+.trabajo-card-info-btn {
+  font-weight: 600;
+  border: #142850 2px solid;
+  border-radius: 10px;
+  padding: 1em;
+  margin-right: 1em;
+  text-decoration: none;
+  color: #142850;
+  transition: 1s ease-in-out;
+}
+
+.b-repo:hover {
+  background-color: rgb(229, 255, 0);
+}
+
+@media (max-width: 1000px) {
+  .trabajo-card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .trabajo-card-info {
+    text-align: center;
+  }
+  .trabajo-card-info-btns {
+    justify-content: center;
+  }
+} ;
