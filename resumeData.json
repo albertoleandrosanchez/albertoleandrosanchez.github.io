@@ -1,0 +1,123 @@
+{
+  "main": {
+    "name":"Alberto Leandro Sanchez",
+    "occupation":"Alumno asistente en la Universidad Nacional de Hurlingham",
+    "description":"Soy un estudiante avanzado de la Tecnicatura en informatica, futuro dev",
+    "image":"profilepic.jpeg",
+    "bio":"Desde que descubri la programacion, estoy totalmente motivado y abierto a seguir aprendiendo muchisimo mas ya que es algo que me apasiona, tengo la ventaja de que soy proactivo y capaz de motivar al grupo de trabajo para cumplir a tiempo y de la forma mas correcta posible cualquier objetivo",
+    "contactmessage":"Si estan interesados en mi perfil no duden en contactarme, muchas gracias",
+    "email": "albertoleandrosanchez@hotmail.com",
+    "phone": "1169033092",
+    "address":{
+      "city":"Buenos aires",
+      "state":"Argentina"
+    },
+    "website": "https://albertoleandrosanchez.github.io/",
+    "resumedownload":"%PUBLIC_URL%/CV-AlbertoLeandroSanchez.pdf",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"https://www.facebook.com/en.lo.de.beto/",
+        "className":"fab fa-facebook-f"
+      },
+      {
+        "name":"linkedin",
+        "url":"http://linkedin.com/in/alberto-leandro-sanchez-2ab11714b",
+        "className":"fab fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"http://github.com/albertoleandrosanchez",
+        "className":"fab fa-github"
+      },
+      {
+        "name":"whatsapp",
+        "url":"https://api.whatsapp.com/send?phone=541169033092",
+        "className":"fab fa-whatsapp"
+      } 
+    ]
+  },
+  "resume":{
+    "skillmessage":"",
+    "education":[
+      {
+        "school":"Universidad Nacional De Hurlingham",
+        "degree":"Tecnicatura en Informatica",
+        "graduated":"En Curso",
+        "description":"Aprendi POO, base de datos rel y no rel, diseño de patrones, algoritmos de busqueda y de ordenamiento, etc."
+      }
+    ],
+    "work":[
+      {
+        "company":"Universidad De Hurlingham",
+        "title":"Alumno asistente en la Universidad De Hurlingham",
+        "years":"junio 2020 - Present",
+        "description":"Seguimiento y motivacion de alumnos, resolucion de consultas, preparado de trabajos practicos."
+      }
+    ],
+    "skills":[
+      {
+        "name":"Git",
+        "level":"60%"
+      },
+      {
+        "name":"Javascript",
+        "level":"55%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"50%"
+      },
+      {
+        "name":"CSS3",
+        "level":"90%"
+      },
+      {
+        "name":"HTML5",
+        "level":"80%"
+      },
+      {
+        "name":"Base de Datos Relacionales (MySQL)",
+        "level":"50%"
+      },
+      {
+        "name":"Sequelize",
+        "level":"80%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Clon de Netflix",
+        "category":"Proyecto de youtube de CleverProgrammer",
+        "image":"netflix-clone-site.jpg",
+        "url":"https://netflix-clone-als.netlify.app/"
+      },
+      {
+        "title":"Vanilla BlackJack",
+        "category":"Proyecto Hecho en Vanilla Javascript desde 0",
+        "image":"blackjack-site.jpg",
+        "url":"https://blackjack-als.netlify.app/"
+      },
+      {
+        "title":"Pokedex ReactJs",
+        "category":"Proyecto hecho en ReactJs, solo leyendo documentacion",
+        "image":"pokedex-site.jpg",
+        "url":"https://pokedex-als.netlify.app/"
+      }
+    ]
+  },
+  "testimonials":{
+    "testimonials":[
+      {
+        "text":"",
+        "user":""
+      },
+      {
+        "text":"",
+        "user":""
+      }
+    ]
+  }
+}
