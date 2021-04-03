@@ -13,7 +13,7 @@
       "state":"Argentina"
     },
     "website": "https://albertoleandrosanchez.github.io/",
-    "resumedownload":"%PUBLIC_URL%/images/CV-AlbertoLeandroSanchez.pdf",
+    "resumedownload":"./images/CV-AlbertoLeandroSanchez.pdf",
     "social":[
       {
         "name":"facebook",
