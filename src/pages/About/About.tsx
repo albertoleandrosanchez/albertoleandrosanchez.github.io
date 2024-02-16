@@ -1,10 +1,67 @@
 import PageContainer from "@/components/layout/PageContainer";
 import "./About.css";
 import { PageInterface } from "@/interfaces/Page";
-import SkillItem from "./components/SkillItem";
+import Skill from "./components/Skill/Skill";
+import { SkillItemProps } from "./components/SkillItem/SkillItem";
 const About = ({ id, className }: PageInterface) => {
+  const skillsFrontend = [
+    {
+      title: "HTML5",
+      icon: "fab fa-html5",
+      level: "Basico",
+    },
+    {
+      title: "CSS3",
+      icon: "fab fa-css3-alt",
+      level: "Avanzado",
+    },
+    {
+      title: "JavaScript",
+      icon: "fab fa-js",
+      level: "Avanzado",
+    },
+    {
+      title: "React",
+      icon: "fab fa-react",
+      level: "Intermedio-Avanzado",
+    },
+    {
+      title: "Next.Js",
+      icon: "fab fa-vuejs",
+      level: "Intermedio",
+    },
+    {
+      title: "Tailwind",
+      icon: "fab fa-sass",
+      level: "Intermedio",
+    },
+  ] as SkillItemProps[];
+
+  const skillsBackend = [
+    {
+      title: "Node",
+      icon: "fab fa-node",
+      level: "Intermedio",
+    },
+    {
+      title: "Express",
+      icon: "fas fa-server",
+      level: "Intermedio",
+    },
+    {
+      title: "MongoDB",
+      icon: "fas fa-database",
+      level: "Intermedio",
+    },
+    {
+      title: "SQL",
+      icon: "fas fa-database",
+      level: "Basico",
+    },
+  ] as SkillItemProps[];
+
   return (
-    <PageContainer id={id} className={`p-8 ${className}`}>
+    <PageContainer id={id} className={`p-8  ${className}`}>
       <div id="about-me" className="relative z-10">
         {/* Quiero que las etiquetas p se acomoden alrededor de la foto, osea sobre el lado derecho y si ya el lado derecho se llena que bajen */}
         <div
@@ -36,37 +93,22 @@ const About = ({ id, className }: PageInterface) => {
           Nacional de Hurlingham.
         </p>
       </div>
-      <div id="skills" className=" flex flex-col w-full h-full">
+      <div id="skills" className=" flex flex-col w-full   ">
         {/* quiero que el H1 no este en el centro, sino en el comienzo */}
-        <h1 id="skills-title" className="mb-5 text-3xl font-bold">
+        <h1
+          id="skills-title"
+          className="mb-5 text-3xl font-bold text-blue-700 lg:text-4xl lg:mb-10 lg:ml-20
+        "
+        >
           Habilidades
         </h1>
         <div id="skills-list" className="flex h-full">
-          <div className="flex relative">
-            <h2 className="skill_titulo">Frontend</h2>
-            <div
-              id="divider"
-              className=" h-full w-[2px]  bg-slate-300 ml-20"
-            ></div>
-            <ul>
-              <SkillItem title="HTML5" icon="fab fa-html5" level="Basico" />
-              <SkillItem title="CSS3" icon="fab fa-css3-alt" level="Avanzado" />
-              <SkillItem title="JavaScript" icon="fab fa-js" level="Avanzado" />
-              <SkillItem
-                title="React"
-                icon="fab fa-react"
-                level="Intermedio-Avanzado"
-              />
-              <li>
-                <i className="fab fa-vuejs"></i>
-                <span className=" ml-2">Next.Js</span>
-              </li>
-              <li>
-                <i className="fab fa-sass"></i>
-                <span className=" ml-2">Tailwind</span>
-              </li>
-            </ul>
-          </div>
+          <Skill title="Frontend" skills={skillsFrontend} />
+          <div
+            id="divider"
+            className=" h-full w-[2px]  bg-slate-300 ml-20 mr-5"
+          />
+          <Skill title="Backend" skills={skillsBackend} />
         </div>
       </div>
     </PageContainer>

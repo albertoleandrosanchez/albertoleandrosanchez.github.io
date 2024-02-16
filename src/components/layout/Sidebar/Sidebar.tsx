@@ -3,7 +3,7 @@ import "./Sidebar.css";
 const Sidebar = () => {
   const pages = ["main", "work", "about", "contact"];
   return (
-    <div id="sidebar">
+    <div id="sidebar" className="hidden lg:block">
       <div
         className=" w-40 h-screen bg-slate-200 flex flex-col 
           justify-between 
