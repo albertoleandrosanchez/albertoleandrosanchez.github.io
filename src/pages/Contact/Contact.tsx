@@ -34,8 +34,16 @@ const Contact = ({ id, className }: ContactProps) => {
     <PageContainer id={id} className={`p-8 ${className}`}>
       <h1 className="text-4xl font-bold text-blue-700">Hablemos</h1>
       <p className="mt-4 text-lg">
-        me puedes contactar llenando el siguiente formulario
+        me puedes contactar enviandome un email a mi correo electronico
+        <a
+          href="mailto:albertoleandrosanchez@gmail.com"
+          className="text-blue-800 text-base"
+        >
+          {" "}
+          albertoleandrosanchez@gmail.com
+        </a>
       </p>
+      <p className="mt-4 text-lg">o llenando el siguiente formulario</p>
       <form
         ref={form}
         onSubmit={handleSubmit}
@@ -65,7 +73,6 @@ const Contact = ({ id, className }: ContactProps) => {
           h-32
           resize-none
           p-2
-          border-2 border-gray-200
           rounded-md
         "
         />

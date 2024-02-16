@@ -1,65 +1,10 @@
 import PageContainer from "@/components/layout/PageContainer";
 import "./About.css";
+import { about } from "@/lang/es";
 import { PageInterface } from "@/interfaces/Page";
 import Skill from "./components/Skill/Skill";
-import { SkillItemProps } from "./components/SkillItem/SkillItem";
+
 const About = ({ id, className }: PageInterface) => {
-  const skillsFrontend = [
-    {
-      title: "HTML5",
-      icon: "fab fa-html5",
-      level: "Basico",
-    },
-    {
-      title: "CSS3",
-      icon: "fab fa-css3-alt",
-      level: "Avanzado",
-    },
-    {
-      title: "JavaScript",
-      icon: "fab fa-js",
-      level: "Avanzado",
-    },
-    {
-      title: "React",
-      icon: "fab fa-react",
-      level: "Intermedio-Avanzado",
-    },
-    {
-      title: "Next.Js",
-      icon: "fab fa-vuejs",
-      level: "Intermedio",
-    },
-    {
-      title: "Tailwind",
-      icon: "fab fa-sass",
-      level: "Intermedio",
-    },
-  ] as SkillItemProps[];
-
-  const skillsBackend = [
-    {
-      title: "Node",
-      icon: "fab fa-node",
-      level: "Intermedio",
-    },
-    {
-      title: "Express",
-      icon: "fas fa-server",
-      level: "Intermedio",
-    },
-    {
-      title: "MongoDB",
-      icon: "fas fa-database",
-      level: "Intermedio",
-    },
-    {
-      title: "SQL",
-      icon: "fas fa-database",
-      level: "Basico",
-    },
-  ] as SkillItemProps[];
-
   return (
     <PageContainer id={id} className={`p-8  ${className}`}>
       <div id="about-me" className="relative z-10">
@@ -102,13 +47,14 @@ const About = ({ id, className }: PageInterface) => {
         >
           Habilidades
         </h1>
-        <div id="skills-list" className="flex h-full">
-          <Skill title="Frontend" skills={skillsFrontend} />
-          <div
-            id="divider"
-            className=" h-full w-[2px]  bg-slate-300 ml-20 mr-5"
-          />
-          <Skill title="Backend" skills={skillsBackend} />
+        <div
+          id="skills-list"
+          className="flex h-full first:border-r-2 first:pr-5"
+        >
+          {about.content.skill_content.skills.length > 0 &&
+            about.content.skill_content.skills.map((skill, index) => (
+              <Skill title={skill.title} skills={skill.skills} key={index} />
+            ))}
         </div>
       </div>
     </PageContainer>
