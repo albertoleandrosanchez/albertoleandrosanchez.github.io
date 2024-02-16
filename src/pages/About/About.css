@@ -1,0 +1,9 @@
+.skill_titulo {
+  transform: rotate(-90deg) translate(-50%, -100%);
+  position: absolute;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

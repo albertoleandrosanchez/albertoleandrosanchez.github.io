@@ -1,0 +1,14 @@
+#workpage_container::-webkit-scrollbar {
+  display: block;
+  height: 10px;
+}
+
+#workpage_container::-webkit-scrollbar-thumb {
+  background-color: #dadada;
+  border-radius: 10px;
+}
+
+#workpage_container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}

@@ -1,0 +1,12 @@
+.item {
+  display: block;
+  width: 5em;
+  height: 0.2em;
+  background-color: #6c6c6c;
+  border-radius: 1em;
+  margin: 0.5em 0;
+}
+
+.active {
+  background-color: #e9ecef;
+}
