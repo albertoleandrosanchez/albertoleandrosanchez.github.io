@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { contact } from "@/lang/es";
 
 type ContactProps = {
   id: string;
@@ -34,16 +35,15 @@ const Contact = ({ id, className }: ContactProps) => {
     <PageContainer id={id} className={`p-8 ${className}`}>
       <h1 className="text-4xl font-bold text-blue-700">Hablemos</h1>
       <p className="mt-4 text-lg">
-        me puedes contactar enviandome un email a mi correo electronico
+        {contact.subtitle}
         <a
           href="mailto:albertoleandrosanchez@gmail.com"
           className="text-blue-800 text-base"
         >
-          {" "}
-          albertoleandrosanchez@gmail.com
+          {" " + contact.content.contact_info.email}
         </a>
       </p>
-      <p className="mt-4 text-lg">o llenando el siguiente formulario</p>
+      <p className="mt-4 text-lg">{contact.content.form.description}</p>
       <form
         ref={form}
         onSubmit={handleSubmit}
@@ -55,18 +55,18 @@ const Contact = ({ id, className }: ContactProps) => {
       >
         <input
           type="text"
-          placeholder="Nombre"
+          placeholder={contact.content.form.name}
           name="from_name"
           className="mb-4 p-2 rounded-md"
         />
         <input
           type="email"
           name="reply_to"
-          placeholder="Email"
+          placeholder={contact.content.form.email}
           className="mb-4 p-2 rounded-md"
         />
         <textarea
-          placeholder="Mensaje"
+          placeholder={contact.content.form.message}
           name="message"
           className="
           mb-4
@@ -80,7 +80,7 @@ const Contact = ({ id, className }: ContactProps) => {
           className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4"
           type="submit"
         >
-          Enviar
+          {contact.content.form.submit}
         </button>
       </form>
       <ToastContainer />

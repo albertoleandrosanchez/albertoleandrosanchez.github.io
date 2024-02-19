@@ -1,6 +1,6 @@
 import PageContainer from "@/components/layout/PageContainer";
 import "./About.css";
-import { about } from "@/lang/es";
+import { about } from "@/lang/en";
 import { PageInterface } from "@/interfaces/Page";
 import Skill from "./components/Skill/Skill";
 
@@ -39,7 +39,6 @@ const About = ({ id, className }: PageInterface) => {
         </p>
       </div>
       <div id="skills" className=" flex flex-col w-full   ">
-        {/* quiero que el H1 no este en el centro, sino en el comienzo */}
         <h1
           id="skills-title"
           className="mb-5 text-3xl font-bold text-blue-700 lg:text-4xl lg:mb-10 lg:ml-20

@@ -108,7 +108,49 @@ export const about = {
             },
           ] as SkillItemProps[],
         },
+        {
+          title: "DevOps",
+          skills: [
+            {
+              title: "Docker",
+              icon: "fab fa-docker",
+              level: "Basico-Intermedio",
+            },
+            {
+              title: "Kubernetes",
+              icon: "fab fa-kubernetes",
+              level: "Basico",
+            },
+            {
+              title: "Git",
+              icon: "fab fa-git-alt",
+              level: "Avanzado",
+            },
+            {
+              title: "Github",
+              icon: "fab fa-github",
+              level: "Avanzado",
+            },
+          ] as SkillItemProps[],
+        },
       ],
+    },
+  },
+};
+
+export const contact = {
+  title: "Contacto",
+  subtitle: "me puedes contactar enviandome un email a mi correo electronico",
+  content: {
+    contact_info: {
+      email: "albertoleandrosanchez@gmail.com",
+    },
+    form: {
+      description: "o llenando el siguiente formulario",
+      name: "Nombre",
+      email: "Email",
+      message: "Mensaje",
+      submit: "Enviar",
     },
   },
 };
