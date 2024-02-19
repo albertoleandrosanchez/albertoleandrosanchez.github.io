@@ -5,6 +5,7 @@ import { useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import { PageInterface } from "@/interfaces/Page";
 import Badge from "@/components/Badge";
+import Carousel from "../../components/Carousel/Carousel";
 const Work = ({ id, className }: PageInterface) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isDragging, setIsDragging] = useState(false);
@@ -59,13 +60,22 @@ const Work = ({ id, className }: PageInterface) => {
             className="w-fit min-w-full h-1/2 pr-20 "
             key={index}
           >
-            <div id="img_container">
+            <Carousel
+              imgs={["src/assets/img/AC_1.png", "src/assets/img/AC_2.png"]}
+              noButtons
+            />
+            {/* <div
+              id="img_carrousel"
+              className="
+            w-1/4 h-1/2 my-2
+            "
+            >
               <img
                 src={work_item.project_image?.[0] ?? "images/placeholder.jpg"}
                 alt="placeholder"
                 className="w-full h-80 object-contain rounded-lg shadow-lg"
               />
-            </div>
+            </div> */}
             <div id="work_info" className="w-3/4 h-1/2 my-2">
               <div id="work_info_header" className="flex flex-col">
                 <p className="tracking-widest ">

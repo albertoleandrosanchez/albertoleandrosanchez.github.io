@@ -1,7 +1,8 @@
 import "./Sidebar.css";
 
 const Sidebar = () => {
-  const pages = ["main", "work", "about", "contact"];
+  const pages = ["home", "work", "about", "contact"];
+
   return (
     <div id="sidebar" className="hidden lg:block">
       <div

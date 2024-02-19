@@ -10,12 +10,12 @@ const PageContainer = ({
   id?: string | undefined;
 }) => {
   return (
-    <div
+    <section
       id={id}
-      className={`w-full h-screen max-h-screen bg-slate-100 ${className}`}
+      className={`w-full xl:justify-center xl:flex h-screen max-h-screen bg-slate-100 ${className}`}
     >
-      {children}
-    </div>
+      <div className="xl:w-[1024px]">{children}</div>
+    </section>
   );
 };
 
