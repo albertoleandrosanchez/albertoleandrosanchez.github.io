@@ -1,6 +1,5 @@
 import SkillItem from "@/pages/About/components/SkillItem";
 import { SkillItemProps } from "../SkillItem/SkillItem";
-
 interface SkillProps {
   title: string;
   skills: SkillItemProps[];
@@ -8,7 +7,7 @@ interface SkillProps {
 
 const Skill = ({ title, skills }: SkillProps) => {
   return (
-    <div className="flex  h-full relative flex-col lg:flex-row">
+    <div className="flex  h-full relative flex-col lg:flex-row mr-24 ">
       <h2>
         <span
           id="skill_titulo_mobile"
@@ -28,12 +27,13 @@ const Skill = ({ title, skills }: SkillProps) => {
           className=" min-h-48 h-full w-[2px]  bg-slate-300 ml-20 mr-5"
         ></div>
       </div>
-      <ul>
+      <ul id="skillContainer">
         {skills.map((skill) => (
           <SkillItem
             name={skill.name}
             icon={skill.icon}
             level={skill.level}
+            className="flex items-center mb-2"
             key={skill.name}
           />
         ))}

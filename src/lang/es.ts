@@ -62,7 +62,11 @@ export const about = {
   subtitle: "Soy un desarrollador web fullstack",
   content: {
     about_me: {
-      imgs: ["/images/placeholder.jpg"],
+      imgs: [
+        "src/assets/img/CT_1.png",
+        "src/assets/img/CT_2.png",
+        "src/assets/img/CT_3.png",
+      ],
       description: [
         "Soy Técnico informático graduado con más de 2 años y medio de experiencia en desarrollo web, apasionado por crear soluciones digitales que sean eficientes, escalables y fáciles de usar.",
         "Soy una persona proactiva, responsable y con un gran interés por la tecnología. Me gusta trabajar en equipo y estoy siempre dispuesto a aprender cosas nuevas.",

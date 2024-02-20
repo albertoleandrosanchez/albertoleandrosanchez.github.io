@@ -7,3 +7,17 @@
     display: none;
   }
 }
+
+#skills-list::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+#skills-list::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+  border-radius: 0.5rem;
+}
+
+#skills-list::-webkit-scrollbar-thumb:hover {
+  background-color: #bababa;
+}
