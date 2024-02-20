@@ -16,6 +16,15 @@ interface BadgeProps {
 }
 
 const Badge = ({ title, color, size }: BadgeProps) => {
+  const mapcolor = {
+    blue: "bg-blue-500",
+    green: "bg-green-500",
+    slate: "bg-slate-500",
+    red: "bg-red-500",
+    orange: "bg-orange-500",
+    amber: "bg-amber-500",
+    violet: "bg-violet-500",
+  };
   const [textColor, setTextcolor] = useState("text-white");
 
   // useEffect(() => {
@@ -31,7 +40,7 @@ const Badge = ({ title, color, size }: BadgeProps) => {
 
   return (
     <div
-      className={`center relative inline-block select-none whitespace-nowrap rounded-lg py-1 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none ${textColor} bg-${color}-500 `}
+      className={`center relative inline-block select-none whitespace-nowrap rounded-lg py-1 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none ${textColor} ${mapcolor[color]} `}
     >
       <div className="mt-px">{title}</div>
     </div>

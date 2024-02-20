@@ -1,6 +1,6 @@
 import PageContainer from "@/components/layout/PageContainer";
 import "./About.css";
-import { about } from "@/lang/en";
+import { about } from "@/lang/es";
 import { PageInterface } from "@/interfaces/Page";
 import Skill from "./components/Skill/Skill";
 
@@ -9,34 +9,13 @@ const About = ({ id, className }: PageInterface) => {
     <PageContainer id={id} className={`p-8  ${className}`}>
       <div id="about-me" className="relative z-10">
         {/* Quiero que las etiquetas p se acomoden alrededor de la foto, osea sobre el lado derecho y si ya el lado derecho se llena que bajen */}
-        <div
-          id="photo-carousel"
-          className="w-96 h-56 relative p-5 rounded-xl border-slate-800 border-2 z-0 mr-5 mb-5  float-left
-        before:content-[''] before:absolute before:w-1/2 before:h-1/2 before: before:bg-slate-100  before:z-6 before:top-[51%] before:right-[51%] 
-        after:content-[''] after:absolute after:w-1/2 after:h-1/2 after:rounded-xl after:bg-slate-100 after:z-6 after:bottom-[51%] after:left-[51%]
-        "
-        >
-          <img
-            src="/images/placeholder.jpg"
-            alt="Foto de perfil"
-            className="object-cover z-10 relative w-full h-full rounded-xl"
-          />
-        </div>
-        <p className="mb-5">
-          Soy Técnico informático graduado con más de 2 años y medio de
-          experiencia en desarrollo web, apasionado por crear soluciones
-          digitales que sean eficientes, escalables y fáciles de usar.
-        </p>
-        <p className="mb-5">
-          Soy una persona proactiva, responsable y con un gran interés por la
-          tecnología. Me gusta trabajar en equipo y estoy siempre dispuesto a
-          aprender cosas nuevas.
-        </p>
-        <p className="mb-5">
-          Disfruto participar de eventos, aparte de los eventos del trabajo
-          también he participado de orador en un evento de la Universidad
-          Nacional de Hurlingham.
-        </p>
+      
+        {about.content.about_me.description.length > 0 &&
+          about.content.about_me.description.map((description, index) => (
+            <p key={index} className="mb-5">
+              {description}
+            </p>
+          ))}
       </div>
       <div id="skills" className=" flex flex-col w-full   ">
         <h1

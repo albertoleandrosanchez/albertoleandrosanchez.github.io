@@ -1,5 +1,5 @@
 import { SkillItemProps } from "@/pages/About/components/SkillItem/SkillItem";
-
+import { TechKeys, techs } from "./tech";
 export const work = {
   title: "Trabajo",
   subtitle: "Estos son algunos de los proyectos en los que he trabajado",
@@ -8,26 +8,52 @@ export const work = {
       {
         project_name: "Ambiente Controlado",
         project_owner: "Adox S.A.",
-        project_image: ["/images/placeholder.jpg"],
+        project_image: [
+          "src/assets/img/AC_1.png",
+          "src/assets/img/AC_2.png",
+          "src/assets/img/AC_3.png",
+        ],
         proyect_role: ["Fullstack Developer", "DevOps"],
         project_description:
           "Sistema de gestion de sensores de ambiente, con la capacidad de visualizar los datos generar reportes y alertas,.",
         proyect_url: "https://ambientecontrolado.com.ar",
-        proyect_technologies: ["React", "Node", "MongoDB"],
+        proyect_technologies: [
+          "react",
+          "node",
+          "mongodb",
+          "docker",
+          "html",
+          "css",
+          "javascript",
+        ],
       },
       {
         project_name: "Cleantrace",
         project_owner: "Adox S.A.",
+        project_image: [
+          "src/assets/img/CT_1.png",
+          "src/assets/img/CT_2.png",
+          "src/assets/img/CT_3.png",
+        ],
         proyect_role: [
           "Web Developer",
           "Mobile Developer (React Native)",
           "DevOps",
         ],
-        project_image: ["/images/placeholder.jpg"],
         project_description:
           "Sistema de trazabilidad de limpiezas realizadas en establecimientos de salud. App movil y web.",
+        proyect_url: "https://cleantrace.demoadox.com",
+        proyect_technologies: ["react", "node", "mongodb"],
       },
-    ],
+    ] as {
+      project_name: string;
+      project_owner: string;
+      project_image: string[];
+      proyect_role: string[];
+      project_description: string;
+      proyect_url?: string;
+      proyect_technologies: TechKeys[];
+    }[],
   },
 };
 
@@ -52,33 +78,27 @@ export const about = {
           title: "Frontend",
           skills: [
             {
-              title: "HTML5",
-              icon: "fab fa-html5",
+              ...techs.html,
               level: "Basico",
             },
             {
-              title: "CSS3",
-              icon: "fab fa-css3-alt",
+              ...techs.css,
               level: "Avanzado",
             },
             {
-              title: "JavaScript",
-              icon: "fab fa-js",
+              ...techs.javascript,
               level: "Avanzado",
             },
             {
-              title: "React",
-              icon: "fab fa-react",
+              ...techs.react,
               level: "Intermedio-Avanzado",
             },
             {
-              title: "Next.Js",
-              icon: "fab fa-vuejs",
+              ...techs.next,
               level: "Intermedio",
             },
             {
-              title: "Tailwind",
-              icon: "fab fa-sass",
+              ...techs.tailwind,
               level: "Intermedio",
             },
           ] as SkillItemProps[],
@@ -87,23 +107,19 @@ export const about = {
           title: "Backend",
           skills: [
             {
-              title: "Node",
-              icon: "fab fa-node",
+              ...techs.node,
               level: "Intermedio",
             },
             {
-              title: "Express",
-              icon: "fas fa-server",
+              ...techs.express,
               level: "Intermedio",
             },
             {
-              title: "MongoDB",
-              icon: "fas fa-database",
+              ...techs.mongodb,
               level: "Intermedio",
             },
             {
-              title: "SQL",
-              icon: "fas fa-database",
+              ...techs.mysql,
               level: "Basico",
             },
           ] as SkillItemProps[],
@@ -112,23 +128,23 @@ export const about = {
           title: "DevOps",
           skills: [
             {
-              title: "Docker",
-              icon: "fab fa-docker",
+              ...techs.docker,
               level: "Basico-Intermedio",
             },
             {
-              title: "Kubernetes",
-              icon: "fab fa-kubernetes",
+              ...techs.nginx,
               level: "Basico",
             },
             {
-              title: "Git",
-              icon: "fab fa-git-alt",
+              ...techs.linux,
+              level: "Basico",
+            },
+            {
+              ...techs.git,
               level: "Avanzado",
             },
             {
-              title: "Github",
-              icon: "fab fa-github",
+              ...techs.github,
               level: "Avanzado",
             },
           ] as SkillItemProps[],

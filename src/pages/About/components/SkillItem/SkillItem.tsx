@@ -2,18 +2,18 @@ import React from "react";
 import SkillBadge, { SkillLevel } from "./SkillBadge";
 
 export interface SkillItemProps {
-  title: string;
+  name: string;
   icon: string | JSX.Element;
   level: SkillLevel;
   className?: string;
 }
 
-const SkillItem = ({ title, icon, level, className }: SkillItemProps) => {
+const SkillItem = ({ name, icon, level, className }: SkillItemProps) => {
   return (
-    <li key={title} className={className}>
+    <li key={name} className={className}>
       {typeof icon === "string" ? <i className={icon}></i> : icon}
-      <span className=" mx-2 font-semibold">{title}</span>
-      <SkillBadge type={level} key={title} />
+      <span className=" mx-2 font-semibold">{name}</span>
+      <SkillBadge type={level} key={name} />
     </li>
   );
 };

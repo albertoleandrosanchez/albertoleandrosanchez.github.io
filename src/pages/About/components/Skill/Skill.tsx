@@ -31,9 +31,10 @@ const Skill = ({ title, skills }: SkillProps) => {
       <ul>
         {skills.map((skill) => (
           <SkillItem
-            title={skill.title}
+            name={skill.name}
             icon={skill.icon}
             level={skill.level}
+            key={skill.name}
           />
         ))}
       </ul>
