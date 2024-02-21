@@ -56,88 +56,15 @@ export const about = {
       skills: [
         {
           title: "Frontend",
-          skills: [
-            {
-              title: "HTML5",
-              icon: "fab fa-html5",
-              level: "Basic",
-            },
-            {
-              title: "CSS3",
-              icon: "fab fa-css3-alt",
-              level: "Advanced",
-            },
-            {
-              title: "JavaScript",
-              icon: "fab fa-js",
-              level: "Advanced",
-            },
-            {
-              title: "React",
-              icon: "fab fa-react",
-              level: "Intermediate-Advanced",
-            },
-            {
-              title: "Next.Js",
-              icon: "fab fa-vuejs",
-              level: "Intermediate",
-            },
-            {
-              title: "Tailwind",
-              icon: "fab fa-sass",
-              level: "Intermediate",
-            },
-          ] as SkillItemProps[],
+          skills: [] as SkillItemProps[],
         },
         {
           title: "Backend",
-          skills: [
-            {
-              title: "Node",
-              icon: "fab fa-node",
-              level: "Intermediate",
-            },
-            {
-              title: "Express",
-              icon: "fas fa-server",
-              level: "Intermediate",
-            },
-            {
-              title: "MongoDB",
-              icon: "fas fa-database",
-              level: "Intermediate",
-            },
-            {
-              title: "SQL",
-              icon: "fas fa-database",
-              level: "Basic",
-            },
-          ] as SkillItemProps[],
+          skills: [] as SkillItemProps[],
         },
         {
           title: "DevOps",
-          skills: [
-            {
-              title: "Docker",
-              icon: "fab fa-docker",
-              level: "Basic-Intermediate",
-            },
-            {
-              title: "Kubernetes",
-              icon: "fab fa-kubernetes",
-              level: "Basic",
-            },
-            {
-              title: "Git",
-              icon: "fab fa-git-alt",
-              level: "Advanced",
-            },
-            {
-              title: "Github",
-              icon: "fab fa-github",
-              level: "Advanced",
-            },
-          ] as SkillItemProps[],
+          skills: [] as SkillItemProps[],
         },
       ],
     },

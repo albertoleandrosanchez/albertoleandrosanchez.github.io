@@ -15,7 +15,7 @@ interface BadgeProps {
   size?: "sm" | "md" | "lg";
 }
 
-const Badge = ({ title, color, size }: BadgeProps) => {
+const Badge = ({ title, color }: BadgeProps) => {
   const mapcolor = {
     blue: "bg-blue-500",
     green: "bg-green-500",
@@ -25,18 +25,7 @@ const Badge = ({ title, color, size }: BadgeProps) => {
     amber: "bg-amber-500",
     violet: "bg-violet-500",
   };
-  const [textColor, setTextcolor] = useState("text-white");
-
-  // useEffect(() => {
-  //   if (
-  //     color === "orange" ||
-  //     color === "amber" ||
-  //     color === "violet" ||
-  //     color
-  //   ) {
-  //     setTextcolor("text-black");
-  //   }
-  // }, [color]);
+  const [textColor, _] = useState("text-white");
 
   return (
     <div

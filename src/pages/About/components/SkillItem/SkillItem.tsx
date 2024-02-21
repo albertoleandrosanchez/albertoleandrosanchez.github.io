@@ -1,4 +1,3 @@
-import React from "react";
 import SkillBadge, { SkillLevel } from "./SkillBadge";
 
 export interface SkillItemProps {
