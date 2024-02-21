@@ -17,16 +17,16 @@ interface SkillBadgeProps {
 }
 const SkillBadge = ({ type }: SkillBadgeProps) => {
   if (type === "Avanzado" || type === "Advanced") {
-    return <Badge title={type} color="blue" />;
+    return <Badge title={type} color="extra_blue" />;
   }
   if (type === "Intermedio-Avanzado" || type === "Intermediate-Advanced") {
-    return <Badge title={type} color="green" />;
+    return <Badge title={type} color="blue" />;
   }
   if (type === "Intermedio" || type === "Intermediate") {
     return <Badge title={type} color="slate" />;
   }
   if (type === "Basico-Intermedio" || type === "Basic-Intermediate") {
-    return <Badge title={type} color="red" />;
+    return <Badge title={type} color="green" />;
   }
   if (type === "Basico" || type === "Basic") {
     return <Badge title={type} color="orange" />;

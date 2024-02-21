@@ -73,7 +73,38 @@ export const about = {
         "Disfruto participar de eventos, aparte de los eventos del trabajo también he participado de orador en un evento de la Universidad Nacional de Hurlingham.",
       ],
     },
-
+    education_content: {
+      title: "Educación",
+      education: [
+        {
+          title: "Técnico Universitario en Informática",
+          place: "Universidad Nacional de Hurlingham",
+          description: "Graduado en 2023",
+        },
+        {
+          title: "Curso de Ingles",
+          place: "Instituto de ingles S.I.A.I.D.E.I",
+          description: "Nivel B2",
+        },
+      ],
+    },
+    experience_content: {
+      title: "Experiencia",
+      experience: [
+        {
+          title: "Desarrollador Web Fullstack",
+          place: "Adox S.A.",
+          description:
+            "Desarrollo de aplicaciones web, moviles, DevOps y Backend",
+        },
+        {
+          title: "Estudiante Asistente",
+          place: "Universidad Nacional de Hurlingham",
+          description:
+            "Asistente en la materia de 'Introduccion a la Programación' , ayudando a los estudiantes a comprender los conceptos basicos de la programación",
+        },
+      ],
+    },
     skill_content: {
       title: "Habilidades",
       subtitle: "Estas son algunas de las tecnologías con las que trabajo",

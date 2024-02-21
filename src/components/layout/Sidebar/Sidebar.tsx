@@ -1,7 +1,15 @@
+import useActivePageRecoil from "@/recoil/activePageRecoil/useActivePageRecoil";
 import "./Sidebar.css";
 
 const Sidebar = () => {
+  const { activePage } = useActivePageRecoil();
   const pages = ["home", "work", "about", "contact"];
+  // const mapIDtoPage = {
+  //   home: "home",
+  //   work: "Trabajo",
+  //   about: "Acerca de mi",
+  //   contact: "Contacto",
+  // };
 
   return (
     <div id="sidebar" className="hidden lg:block">
@@ -23,9 +31,8 @@ const Sidebar = () => {
             return (
               <li
                 key={page}
-                className="cursor-pointer h-4 mb-4"
+                className={`cursor-pointer h-4 mb-4`}
                 onClick={() => {
-                  console.log(page);
                   const element = document.getElementById(page);
                   if (element) {
                     element.scrollIntoView({ behavior: "smooth" });
@@ -33,14 +40,16 @@ const Sidebar = () => {
                 }}
               >
                 <a href={`#${page}`}>
-                  <span className="item"></span>
+                  <span
+                    className={`item ${activePage == page ? "active" : ""}`}
+                  ></span>
                 </a>
               </li>
             );
           })}
         </ul>
         <div id="arrowdown-container" className="h-1/2">
-          a
+          <p className="titulo_pagina">{activePage.toUpperCase()}</p>
         </div>
       </div>
     </div>

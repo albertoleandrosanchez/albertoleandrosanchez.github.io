@@ -12,7 +12,7 @@ const Skill = ({ title, skills }: SkillProps) => {
         <span
           id="skill_titulo_mobile"
           className="lg:hidden block 
-      mb-5 text-2xl font-bold text-blue-700
+      mb-5 text-xl font-bold text-blue-700
     "
         >
           {title}

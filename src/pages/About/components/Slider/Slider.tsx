@@ -16,9 +16,9 @@ const Slider = ({ imgs }: SliderProps) => {
 
   return (
     <div
-      className="w-96 h-56 relative p-5 rounded-xl border-slate-800 border-2 z-0 mr-5 mb-5  float-left  
-      before:content-[''] before:absolute before:w-1/2 before:h-1/2 before: before:bg-slate-100  before:z-6 before:top-[51%] before:right-[51%] 
-      after:content-[''] after:absolute after:w-1/2 after:h-1/2 after:rounded-xl after:bg-slate-100 after:z-6 after:bottom-[51%] after:left-[51%]
+      className="w-full h-44 lg:w-96 lg:h-56 relative p-5 rounded-xl lg:border-slate-800 lg:border-2 z-0 mr-5 mb-5  float-left  
+      before:hidden lg:before:block lg:before:content-[''] before:absolute before:w-1/2 before:h-1/2 before: before:bg-slate-100  before:z-6 before:top-[51%] before:right-[51%] 
+      after:hidden lg:after:block after:content-[''] after:absolute after:w-1/2 after:h-1/2 after:rounded-xl after:bg-slate-100 after:z-6 after:bottom-[51%] after:left-[51%]
   "
     >
       {imgs.length > 0 &&
@@ -26,7 +26,7 @@ const Slider = ({ imgs }: SliderProps) => {
           <img
             src={image}
             alt="Foto de perfil"
-            className={` object-cover z-10 absolute rounded-xl duration-[2s] max-w-full pr-10 ${
+            className={` object-contain z-10 absolute h-full rounded-xl duration-[2s] max-w-full pr-10 ${
               index === current ? "opacity-100" : "opacity-0"
             }`}
             key={index}

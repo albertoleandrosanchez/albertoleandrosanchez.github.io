@@ -8,8 +8,8 @@ import { RecoilDevTools } from "recoil-toolkit";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RecoilRoot>
-      <RecoilDevTools forceSerialize={false} />
       <App />
+      <RecoilDevTools enableConsole forceSerialize={false} />
     </RecoilRoot>
   </React.StrictMode>
 );

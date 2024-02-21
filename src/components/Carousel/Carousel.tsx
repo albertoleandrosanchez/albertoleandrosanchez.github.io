@@ -25,7 +25,7 @@ const Carousel = ({ imgs, noButtons, ...props }: Props) => {
     <div {...props} className="relative overflow-hidden cursor-pointer">
       <div className={`flex transition ease-out duration-4 `}>
         {imgs.map((img, index) => (
-          <div className="min-w-full xl:h-96" key={img}>
+          <div className="min-w-full xl:h-80 2xl:h-96 " key={img}>
             <img
               src={img}
               className={`block object-center transition ease-out duration-1000 ${
