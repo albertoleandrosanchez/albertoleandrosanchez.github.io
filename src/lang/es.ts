@@ -1,26 +1,6 @@
 import { SkillItemProps } from "@/pages/About/components/SkillItem/SkillItem";
 import { TechKeys, techs } from "./tech";
 
-export interface Network {
-  name: string;
-  url: string;
-  icon: string;
-}
-export type NetworkKeys = typeof networks;
-
-export const networks = {
-  github: {
-    name: "Github",
-    url: "https://github.com/albertoleandrosanchez",
-    icon: "fab fa-github",
-  },
-  linkedin: {
-    name: "Linkedin",
-    url: "https://www.linkedin.com/in/albertoleandrosanchez",
-    icon: "fa-brands fa-linkedin",
-  },
-} as { [key: string]: Network };
-
 export const work = {
   title: "Trabajo",
   subtitle: "Estos son algunos de los proyectos en los que he trabajado",
@@ -212,9 +192,9 @@ export const about = {
 
 export const contact = {
   title: "Contacto",
-  subtitle: "me puedes contactar enviandome un email a mi correo electronico",
+  subtitle: "Me puedes contactar enviandome un email a mi correo electronico",
   subtitle2: "Tambien puedes contactarme a traves de mis otras redes",
-  subtitle3: "o llenando el siguiente formulario",
+  subtitle3: "O llenando el siguiente formulario",
 
   content: {
     contact_info: {
@@ -227,4 +207,10 @@ export const contact = {
       submit: "Enviar",
     },
   },
+};
+
+export default {
+  work,
+  about,
+  contact,
 };

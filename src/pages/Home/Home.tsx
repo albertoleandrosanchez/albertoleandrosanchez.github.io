@@ -1,6 +1,6 @@
 import { PageInterface } from "@/interfaces/Page";
 import PageContainer from "../../components/layout/PageContainer";
-import { networks } from "@/lang/es";
+import { networks } from "@/lang/network";
 
 const Home = ({ id, className }: PageInterface) => {
   return (
