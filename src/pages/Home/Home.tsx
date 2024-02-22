@@ -1,5 +1,6 @@
 import { PageInterface } from "@/interfaces/Page";
 import PageContainer from "../../components/layout/PageContainer";
+import { networks } from "@/lang/es";
 
 const Home = ({ id, className }: PageInterface) => {
   return (
@@ -19,22 +20,22 @@ const Home = ({ id, className }: PageInterface) => {
           />
           <p className=" text-3xl font-thin">Web Developer</p>
           <div id="icon-container" className="flex justify-evenly w-24 mt-2">
-            <a
-              href="
-              https://www.linkedin.com/in/albertoleandrosanchez
-          "
-              target="_blank"
-            >
-              <i className="fa-brands fa-linkedin text-3xl " />
-            </a>
-            <a
-              href="
-            https://github.com/albertoleandrosanchez
-          "
-              target="_blank"
-            >
-              <i className="fab fa-github text-3xl" />
-            </a>
+            {
+              // eslint-disable-next-line array-callback-return
+              Object.keys(networks).map((key) => {
+                const network = networks[key];
+                return (
+                  <a
+                    href={network.url}
+                    target="_blank"
+                    key={key}
+                    rel="noreferrer"
+                  >
+                    <i className={`${network.icon} text-3xl`} />
+                  </a>
+                );
+              })
+            }
           </div>
         </div>
       </div>

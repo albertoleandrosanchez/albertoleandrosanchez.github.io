@@ -4,6 +4,7 @@ import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { contact } from "@/lang/es";
+import { networks } from "../../lang/es";
 
 type ContactProps = {
   id: string;
@@ -43,7 +44,18 @@ const Contact = ({ id, className }: ContactProps) => {
           {" " + contact.content.contact_info.email}
         </a>
       </p>
-      <p className="mt-4 text-lg">{contact.content.form.description}</p>
+      <p className="mt-4 text-lg">{contact.subtitle2} </p>
+      <div id="networks">
+        {Array.from(Object.keys(networks)).map((key) => {
+          const network = networks[key];
+          return (
+            <a href={network.url} target="_blank" key={key} rel="noreferrer">
+              <i className={`${network.icon} text-3xl mr-2 text-blue-700`} />
+            </a>
+          );
+        })}
+      </div>
+      <p className="mt-4 text-lg">{contact.subtitle3}</p>
       <form
         ref={form}
         onSubmit={handleSubmit}

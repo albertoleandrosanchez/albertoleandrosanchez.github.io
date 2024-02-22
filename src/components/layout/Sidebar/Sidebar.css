@@ -4,7 +4,7 @@
   height: 0.2em;
   background-color: #6c6c6c;
   border-radius: 1em;
-  margin: 0.5em 0;
+  margin: 0;
   transition: 500ms;
 }
 
@@ -21,7 +21,37 @@
   color: #6c6c6c;
   margin: 0.5em 0;
   transition: 500ms;
-  font-weight: bold;
+  text-align: center;
+}
+
+.titulo_pagina_inicio {
+  transform: rotate(90deg);
+  font-size: 1.5em;
+  color: #6c6c6c;
+  transition: 500ms;
+  text-align: center;
 }
 
 /* ARROWDOWN */
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 89%;
+  background: theme("colors.slate.500");
+  top: 0;
+  left: 50%;
+  transform: translateX(-1px);
+}
+
+.point {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid theme("colors.slate.500");
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}

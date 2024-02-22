@@ -1,5 +1,26 @@
 import { SkillItemProps } from "@/pages/About/components/SkillItem/SkillItem";
 import { TechKeys, techs } from "./tech";
+
+export interface Network {
+  name: string;
+  url: string;
+  icon: string;
+}
+export type NetworkKeys = typeof networks;
+
+export const networks = {
+  github: {
+    name: "Github",
+    url: "https://github.com/albertoleandrosanchez",
+    icon: "fab fa-github",
+  },
+  linkedin: {
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/albertoleandrosanchez",
+    icon: "fa-brands fa-linkedin",
+  },
+} as { [key: string]: Network };
+
 export const work = {
   title: "Trabajo",
   subtitle: "Estos son algunos de los proyectos en los que he trabajado",
@@ -114,7 +135,7 @@ export const about = {
           skills: [
             {
               ...techs.html,
-              level: "Basico",
+              level: "Avanzado",
             },
             {
               ...techs.css,
@@ -122,7 +143,7 @@ export const about = {
             },
             {
               ...techs.javascript,
-              level: "Avanzado",
+              level: "Intermedio-Avanzado",
             },
             {
               ...techs.react,
@@ -155,7 +176,7 @@ export const about = {
             },
             {
               ...techs.mysql,
-              level: "Basico",
+              level: "Basico-Intermedio",
             },
           ] as SkillItemProps[],
         },
@@ -192,12 +213,14 @@ export const about = {
 export const contact = {
   title: "Contacto",
   subtitle: "me puedes contactar enviandome un email a mi correo electronico",
+  subtitle2: "Tambien puedes contactarme a traves de mis otras redes",
+  subtitle3: "o llenando el siguiente formulario",
+
   content: {
     contact_info: {
       email: "albertoleandrosanchez@gmail.com",
     },
     form: {
-      description: "o llenando el siguiente formulario",
       name: "Nombre",
       email: "Email",
       message: "Mensaje",
