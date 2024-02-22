@@ -12,6 +12,7 @@ const Skill = ({ title, skills }: SkillProps) => {
         <span
           id="skill_titulo_mobile"
           className="lg:hidden block 
+          
       mb-5 text-xl font-bold text-blue-700
     "
         >
@@ -19,7 +20,7 @@ const Skill = ({ title, skills }: SkillProps) => {
         </span>
       </h2>
       <div className="lg:block hidden">
-        <h2 className="skill_titulo hover:text-blue-500 transition duration-300 ease-in-out">
+        <h2 className="skill_titulo text-slate-400 hover:text-blue-500 transition duration-300 ease-in-out">
           {title}
         </h2>
         <div
@@ -33,7 +34,7 @@ const Skill = ({ title, skills }: SkillProps) => {
             name={skill.name}
             icon={skill.icon}
             level={skill.level}
-            className="flex items-center mb-2"
+            className="flex items-center mb-2 hover:text-blue-500 transition duration-300 ease-in-out hover:scale-105"
             key={skill.name}
           />
         ))}

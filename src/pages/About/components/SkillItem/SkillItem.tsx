@@ -15,8 +15,8 @@ const SkillItem = ({ name, icon, level, className }: SkillItemProps) => {
       ) : (
         icon
       )}
-      <span className=" mx-2 font-semibold min-w-28">{name}</span>
-      <SkillBadge type={level} key={name} />
+      <span className=" mx-2 font-normal min-w-28 hover:text">{name}</span>
+      {/* <SkillBadge type={level} key={name} /> */}
     </li>
   );
 };

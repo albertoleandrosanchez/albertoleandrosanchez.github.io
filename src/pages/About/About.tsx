@@ -97,7 +97,7 @@ const About = ({ id, className }: PageInterface) => {
         </h1>
         <div
           id="skills-list"
-          className="flex h-full first:border-r-2 first:pr-5  overflow-x-scroll"
+          className="flex h-full first:border-r-2 first:pr-5 overflow-x-scroll lg:overflow-hidden"
         >
           {about.content.skill_content.skills.length > 0 &&
             about.content.skill_content.skills.map((skill, index) => (

@@ -31,7 +31,7 @@ const Home = ({ id, className }: PageInterface) => {
                     key={key}
                     rel="noreferrer"
                   >
-                    <i className={`${network.icon} text-3xl`} />
+                    <i className={`${network.icon} text-3xl text-blue-900`} />
                   </a>
                 );
               })
