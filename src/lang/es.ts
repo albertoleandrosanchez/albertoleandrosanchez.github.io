@@ -9,9 +9,9 @@ export const work = {
         project_name: "Ambiente Controlado",
         project_owner: "Adox S.A.",
         project_image: [
-          "src/assets/img/AC_1.png",
-          "src/assets/img/AC_2.png",
-          "src/assets/img/AC_3.png",
+          "/images/work/AC_1.png",
+          "/images/work/AC_2.png",
+          "/images/work/AC_3.png",
         ],
         proyect_role: ["Fullstack Developer", "DevOps"],
         project_description:
@@ -31,9 +31,9 @@ export const work = {
         project_name: "Cleantrace",
         project_owner: "Adox S.A.",
         project_image: [
-          "src/assets/img/CT_1.png",
-          "src/assets/img/CT_2.png",
-          "src/assets/img/CT_3.png",
+          "/images/work/CT_1.png",
+          "/images/work/CT_2.png",
+          "/images/work/CT_3.png",
         ],
         proyect_role: [
           "Web Developer",
