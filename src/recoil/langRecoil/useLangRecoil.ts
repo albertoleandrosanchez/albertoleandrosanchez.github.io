@@ -7,8 +7,8 @@ import en from "@/lang/en";
 export const useLangRecoil = () => {
   const setLanguage = useSetRecoilState(activePageRecoil);
   const lang = useRecoilValue(activePageRecoil);
-  const [langContent, setLangContent] = React.useState<() => any>(
-    () => () => ({})
+  const [langContent, setLangContent] = React.useState<typeof es | typeof en>(
+    es
   );
   const setLang = useCallback(
     (lang: string) => {
@@ -26,7 +26,7 @@ export const useLangRecoil = () => {
 
   useEffect(() => {
     const fetch = async () => {
-      setLangContent(() => () => lang === "es" ? es : en);
+      setLangContent(lang === "es" ? es : en);
     };
     fetch();
   }, [lang]);

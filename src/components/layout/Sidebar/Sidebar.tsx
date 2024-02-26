@@ -5,11 +5,18 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   const { activePage } = useActivePageRecoil();
-  const pages = ["home", "work", "about", "contact"] as activePageType[];
+  const pages = [
+    "home",
+    "work",
+    "about",
+    "experience",
+    "contact",
+  ] as activePageType[];
   const mapIDtoPage = {
     home: "Inicio",
     work: "Trabajo",
     about: "Acerca de mi",
+    experience: "Experiencia",
     contact: "Contacto",
   };
 
