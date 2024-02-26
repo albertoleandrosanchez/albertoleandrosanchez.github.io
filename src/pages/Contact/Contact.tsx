@@ -14,7 +14,7 @@ type ContactProps = {
 
 const Contact = ({ id, className }: ContactProps) => {
   const { langContent } = useLangRecoil();
-  const { contact } = langContent();
+  const { contact } = langContent;
   const form = React.useRef<HTMLFormElement>(null);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

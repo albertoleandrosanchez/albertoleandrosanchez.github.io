@@ -64,9 +64,9 @@ export const about = {
   content: {
     about_me: {
       imgs: [
-        "src/assets/img/CT_1.png",
-        "src/assets/img/CT_2.png",
-        "src/assets/img/CT_3.png",
+        "/images/work/CT_1.png",
+        "/images/work/CT_2.png",
+        "/images/work/CT_3.png",
       ],
       description: [
         "Soy Técnico informático graduado con más de 2 años y medio de experiencia en desarrollo web, apasionado por crear soluciones digitales que sean eficientes, escalables y fáciles de usar.",

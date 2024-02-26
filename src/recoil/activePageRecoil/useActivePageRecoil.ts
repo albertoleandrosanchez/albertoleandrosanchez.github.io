@@ -6,7 +6,12 @@ export type activePageRecoilType = {
   setActivePageRecoil: (page: activePageType) => void;
 };
 
-export type activePageType = "home" | "work" | "about" | "contact";
+export type activePageType =
+  | "home"
+  | "work"
+  | "about"
+  | "contact"
+  | "experience";
 
 const useActivePageRecoil = () => {
   const [activePage, setActivePage] =
