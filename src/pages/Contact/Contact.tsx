@@ -3,8 +3,9 @@ import emailjs from "@emailjs/browser";
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { contact } from "@/lang/es";
-import { networks } from "../../lang/es";
+// import { contact } from "@/lang/es";
+import { networks } from "@/lang/network";
+import { useLangRecoil } from "@/recoil/langRecoil/useLangRecoil";
 
 type ContactProps = {
   id: string;
@@ -12,6 +13,8 @@ type ContactProps = {
 };
 
 const Contact = ({ id, className }: ContactProps) => {
+  const { langContent } = useLangRecoil();
+  const { contact } = langContent();
   const form = React.useRef<HTMLFormElement>(null);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,6 +35,7 @@ const Contact = ({ id, className }: ContactProps) => {
         }
       );
   };
+  if (!contact) return <div></div>;
   return (
     <PageContainer id={id} className={`p-8 ${className}`}>
       <h1 className="text-4xl font-bold text-blue-700">Hablemos</h1>
