@@ -1,13 +1,13 @@
-import SkillBadge, { SkillLevel } from "./SkillBadge";
+import { SkillLevel } from "./SkillBadge";
 
 export interface SkillItemProps {
   name: string;
   icon: string | JSX.Element;
-  level: SkillLevel;
+  level?: SkillLevel;
   className?: string;
 }
 
-const SkillItem = ({ name, icon, level, className }: SkillItemProps) => {
+const SkillItem = ({ name, icon, className }: SkillItemProps) => {
   return (
     <li key={name} className={className}>
       {typeof icon === "string" ? (
