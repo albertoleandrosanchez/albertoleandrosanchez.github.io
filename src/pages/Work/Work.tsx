@@ -74,13 +74,22 @@ const Work = ({ id, className }: PageInterface) => {
                   imgs={work_item.project_image ?? []}
                   noButtons
                 />
-                <div id="work_info" className="w-full h-1/2 my-2 ">
+                <div id="work_info" className="w-full  my-2 ">
                   <div id="work_info_header" className="flex flex-col ">
-                    <p className="tracking-widest border-b-2 border-b-slate-300 w-fit">
+                    <p className="tracking-tighter border-b-slate-300 w-fit text-xl font-semibold text-blue-700 ">
                       {work_item.project_name} | {work_item.project_owner}
                     </p>
+                    <div id="work_info_body">
+                      <p className="text-justify">
+                        {work_item.project_description}
+                      </p>
+                    </div>
+                    <div
+                      id="work_info_header_divider"
+                      className="w-full h-[1px] bg-slate-300 rounded mt-2 mb-4"
+                    />
                     <div className="flex flex-wrap justify-between overflow-y-scroll h-28 lg:overflow-y-hidden">
-                      <div className="flex flex-col w-1/2">
+                      <div className="flex flex-col w-1/2 border-r-2 ">
                         <p className="text-sm italic">role</p>
                         <div className="flex mt-2 flex-wrap">
                           {work_item.proyect_role?.map((role, index) => (
@@ -95,7 +104,7 @@ const Work = ({ id, className }: PageInterface) => {
                           ))}
                         </div>
                       </div>
-                      <div id="technologies" className="w-1/2 ">
+                      <div id="technologies" className="w-1/2 pl-2">
                         <p className="text-sm italic">Tecnologias usadas</p>
                         <div
                           id="tech_container"
@@ -120,15 +129,6 @@ const Work = ({ id, className }: PageInterface) => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  id="work_info_header_divider"
-                  className="w-full h-[.1em] bg-slate-400 rounded"
-                />
-                <div id="work_info_body" className="my-2">
-                  <p className="text-justify">
-                    {work_item.project_description}
-                  </p>
                 </div>
               </motion.div>
             ))}

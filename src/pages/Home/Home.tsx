@@ -6,7 +6,7 @@ const Home = ({ id, className }: PageInterface) => {
   return (
     <PageContainer id={id}>
       <div
-        className={`w-full h-screen flex flex-col justify-center items-center lg:pl-8 lg:items-start
+        className={`w-fit h-80 flex flex-col justify-center items-center lg:pl-8 lg:items-start
       ${className}`}
       >
         <div className="w-fit flex flex-col items-center ">

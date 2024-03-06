@@ -3,6 +3,7 @@ import React from "react";
 const PageContainer = ({
   children,
   className,
+  inClassName,
   id,
   noFullScreen,
 }: {
@@ -10,6 +11,7 @@ const PageContainer = ({
   className?: string;
   id?: string | undefined;
   noFullScreen?: boolean;
+  inClassName?: string;
 }) => {
   return (
     <section
@@ -18,7 +20,7 @@ const PageContainer = ({
         noFullScreen ? "" : "flex justify-center"
       }`}
     >
-      <div className={`xl:w-[1024px] h-full`}>{children}</div>
+      <div className={`xl:w-[1024px] h-full ${inClassName}`}>{children}</div>
     </section>
   );
 };
