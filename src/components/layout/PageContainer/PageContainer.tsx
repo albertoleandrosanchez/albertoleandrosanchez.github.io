@@ -16,7 +16,7 @@ const PageContainer = ({
   return (
     <section
       id={id}
-      className={`w-full  bg-slate-100 border-b-[1px] border-y-slate-700 xl:justify-center xl:flex min-h-screen items-center ${className} ${
+      className={`w-full  bg-slate-100 border-b-[1px] border-y-slate-200 xl:justify-center xl:flex min-h-screen items-center ${className} ${
         noFullScreen ? "" : "flex justify-center"
       }`}
     >
